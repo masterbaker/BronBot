@@ -11,9 +11,10 @@ for file in *.points; do
     echo "Consolidating data..."
     paste -d "," x.txt y.txt > extracted_points.csv
 
-    echo "Complete. Check 'extracted_points.csv' for your data."
 done
-
+    
+echo "Complete. Check 'extracted_points.csv' for your data."
+    
 # cleanup 
 rm ./x.txt
 rm ./y.txt
